@@ -1,0 +1,23 @@
+# Core RAG settings
+embeddings_model: BAAI/bge-small-en-v1.5
+chunk_size: 1200
+chunk_overlap: 200
+top_k: 8
+max_revision_rounds: 2
+
+# Agent model settings
+# All models below can run via local Ollama.
+supervisor:
+  provider: ollama
+  model: qwen2.5:14b
+  temperature: 0.1
+
+intern:
+  provider: ollama
+  model: llama3.1:8b
+  temperature: 0.4
+
+reviewer:
+  provider: ollama
+  model: deepseek-r1:14b
+  temperature: 0.1
