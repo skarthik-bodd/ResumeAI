@@ -9,6 +9,8 @@ A simple Python project that creates a customized resume for a job description u
 
 The intern drafts a resume, reviewer gives feedback, and supervisor decides whether the intern should revise.
 
+* This is work in progress *
+
 ## Architecture
 
 1. Document Ingestion
