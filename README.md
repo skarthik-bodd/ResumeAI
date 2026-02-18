@@ -46,6 +46,23 @@ These are strong local defaults for fun prototyping with Ollama:
 
 If your machine is smaller, use `qwen2.5:7b` for all three agents first.
 
+Or for local testing use configs from lightweight.yaml:
+```supervisor:
+  provider: ollama
+  model: qwen2.5:3b
+  temperature: 0.1
+
+intern:
+  provider: ollama
+  model: qwen2.5:3b
+  temperature: 0.3
+
+reviewer:
+  provider: ollama
+  model: qwen2.5:3b
+  temperature: 0.1
+```
+
 ## Quick Start
 
 ### 1. Install Python dependencies
